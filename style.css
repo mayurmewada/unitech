@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
+    padding: 7%;
+}
+
+.navbar, .middle {
+    background-color: #000918;
+    font-family: "Quicksand", sans-serif;
+    color: white;
+}
+
+.fa {
+  color: #e75700;
+}
+
+.middle {
+  padding: 0 7%;
+}
+
+.primary {
+  font-weight: 600;
+  font-size: 70px;
+}
+
+.secondary {
+  font-weight: 400;
+  font-size: 60px;
+  letter-spacing: 2px;
+  line-height: 60px;
+}
+
+.tertiary {
+  font-size: 18px;
+}
+
+.btn:link,
+.btn:visited {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 10rem;
+  margin-top: 45px;
+  transition: all 0.2s;
+  font-size: 20px;
+  position: relative;
+  background-color: #e75700;
+}
+
+.btn:hover {
+  transform: translateY(0.1rem);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  display: flex;
+  height: 31vh;
+  justify-content: space-evenly;
+  padding-bottom: 5px;
+}
+
+.box {
+  height: 120px;
+  width: 200px;
+  text-align: center;
+  margin: 10px 0;
+  padding: 20px 0;
+  border: 1px solid black;
+  clear: both;
+  background-color: #121b2a;
+  align-self: flex-end;
+  transition: all 0.2s ease-in-out;
+}
+
+.box:hover {
+  background-color: #e75700;
+  transform: scaleY(1);
+  height: 200px;
+}
+
+.fa-3x {
+  padding: 10px 0;
+}
+
+.box i {
+  display: none;
+}
+.box:hover i {
+  display: block;
+  transition: ease-in-out;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        height: 37vh;
+    }
+}
